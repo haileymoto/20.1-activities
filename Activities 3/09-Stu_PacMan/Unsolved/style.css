@@ -1,0 +1,120 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  position: absolute;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+}
+
+#pac-man {
+  z-index: 999;
+  position: absolute;
+  top: 45.5%;
+  width: 0px;
+  height: 0px;
+  border-right: 12px solid transparent;
+  border-top: 12px solid yellow;
+  border-left: 12px solid yellow;
+  border-bottom: 12px solid yellow;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  animation: bite 0.5s infinite, run-maze 4s linear;
+}
+
+@keyframes run-maze {
+  25% {
+    transform: translate(50px);
+  }
+
+  26% {
+    transform: translate(500px) rotate(90deg);
+  }
+
+  30% {
+    transform: translate(500px, 80px) rotate(90deg);
+  }
+
+  31% {
+    transform: translate(500px, 80px) rotate(0deg);
+  }
+
+  58% {
+    transform: translate(950px, 80px);
+  }
+
+  59% {
+    transform: translate(950px, 80px) rotate(90deg);
+  }
+
+  60% {
+    transform: translate(950px, 160px) rotate(90deg);
+  }
+
+  61% {
+    transform: translate(950px, 160px) rotate(0deg);
+  }
+
+  66% {
+    transform: translate(1100px, 160px) rotate(0deg);
+  }
+
+  67% {
+    transform: translate(1100px, 160px) rotate(-90deg);
+  }
+
+  74% {
+    transform: translate(1100px, 0px) rotate(-90deg);
+  }
+
+  75% {
+    transform: translate(1100px, 0px) rotate(0deg);
+  }
+
+  76% {
+    transform: translate(1100px, 0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1600px, 0px) rotate(0deg);
+  }
+}
+
+@keyframes bite {
+  50% {
+    border-right: 12px solid transparent;
+    border-top: 12px solid yellow;
+    border-left: 12px solid yellow;
+    border-bottom: 12px solid yellow;
+  }
+
+  51% {
+    border-right: 12px solid yellow;
+    border-top: 12px solid yellow;
+    border-left: 12px solid yellow;
+    border-bottom: 12px solid yellow;
+  }
+
+  99% {
+    border-right: 12px solid yellow;
+    border-top: 12px solid yellow;
+    border-left: 12px solid yellow;
+    border-bottom: 12px solid yellow;
+  }
+
+  100% {
+    border-right: 12px solid transparent;
+    border-top: 12px solid yellow;
+    border-left: 12px solid yellow;
+    border-bottom: 12px solid yellow;
+  }
+
+}

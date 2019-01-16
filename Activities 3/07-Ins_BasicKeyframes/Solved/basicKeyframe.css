@@ -1,0 +1,13 @@
+.box {
+  height: 200px;
+  width: 200px;
+  margin: 50px;
+  background-color: blue;
+  border: 2px solid black;
+  animation: shake 0.2s linear 3;
+}
+
+@keyframes shake {
+  25% { transform: translate(20px); }
+  75% { transform: translate(-20px); }
+}

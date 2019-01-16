@@ -1,0 +1,15 @@
+.rotate {
+  margin: 121px 149px;
+  width: 483px;
+  height: 298px;
+  background: #676470;
+  color: #fff;
+  font-size: 3.4em;
+  text-align: center;
+  line-height: 298px;
+  transition: all 0.3s;
+}
+
+.rotate:hover {
+  transform: rotate(270deg);
+}

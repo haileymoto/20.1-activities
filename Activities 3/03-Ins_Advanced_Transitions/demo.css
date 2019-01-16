@@ -1,0 +1,72 @@
+body {
+  background-color: #345995;
+}
+
+/* START BOX */
+.box {
+  /* transition properties */
+  transition-delay: 1s;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  transition-property: background-color;
+
+  /* other properties */
+  width: 150px;
+  height: 150px;
+  background: aquamarine;
+  margin: 40px;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: crimson;
+}
+/* END BOX */
+
+/* START PINK BARS */
+.transition,
+.show-all {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  background-color: hotpink;
+  transition-duration: 2.5s;
+  cursor: pointer;
+}
+
+/* value to be transitioned to, from 200 -> 800 px */
+.transition:hover {
+  width: 800px;
+}
+
+/* set a different timing function for each bar */
+.linear {
+  transition-timing-function: linear;
+}
+
+.ease-in {
+  transition-timing-function: ease-in;
+}
+
+.ease-out {
+  transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+/* END PINK BARS */
+
+.show-all {
+  background-color: aquamarine;
+  color: black;
+}
+
+/* when show-all button is hovered, change width of all following elements with class .transition */
+.show-all:hover ~ .transition {
+  width: 1000px;
+}

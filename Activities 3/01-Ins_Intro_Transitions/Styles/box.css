@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 5px;
+}
+
+/* Define styles for #box element */
+#box {
+  height: 100px;
+  width: 100px;
+  background: rebeccapurple;
+  transition: 5s all;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Define styles for box elements in active state */
+#box:hover {
+  height: 500px;
+  width: 250px;
+  background: chocolate;
+}
